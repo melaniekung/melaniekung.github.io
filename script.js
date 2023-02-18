@@ -165,7 +165,7 @@ function showWorkExp() {
     var expTitle = document.getElementById('exp-title');
     var title = document.getElementById('title');  
     var textBox = document.getElementById('textbox');
-    var workText = "JAN 2022 - PRESENT<br/><ul><li><i class='bi bi-caret-right-fill'></i>front-end web development</li><li><i class='bi bi-caret-right-fill'></i>data migration</li><li><i class='bi bi-caret-right-fill'></i>bug fixes</li></ul>";
+    var workText = "JAN 2022 - PRESENT<br/><ul><li><i class='bi bi-caret-right-fill'></i>full-stack web development</li><li><i class='bi bi-caret-right-fill'></i>data migration</li><li><i class='bi bi-caret-right-fill'></i>system integration</li></ul>";
 
     expTitle.style.display = "none";
     textBox.style.display = "inline-block";
