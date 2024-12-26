@@ -1,58 +1,57 @@
 @use '../custom' as *;
 @use '../components/mixins' as *;
 
+.nav-div {
+    @media (max-width: 500px) {
+        flex-direction: column;
+        padding-bottom: 2rem;
+
+        .navbar-logo {
+            justify-content: center;
+            width: 100%;
+        }
+
+        nav {
+            width: 100%;
+        }
+    }
+}
+
 .menu {
-    @include gradient;
+    background-color: $primary;
 }
 
 .navbar {
     margin-bottom: 0 !important;
     position: sticky !important;
 
-    .navbar-brand {
-        float: left;
+    .navbar-logo {
+        padding: 15px 0;
         height: unset;
-        padding: 10px 15px !important;
 
         .logo {
-            padding-left: 100%;
-        }
-    
-        .logo2 {
-            display: none;
-        }
-    
-        .logo:hover .logo1 {
-            display: none;
-        }
-    
-        .logo:hover .logo2 {
-            display: block;
-            border-radius: 50%;
-            box-shadow: 0px 0px 5px 5px $gray-200;
+            img {
+                height: 75px;
+                width: 75px;
+                border-radius: 50%;
+            }
         }
     }
 }
 
 nav {
-    margin: 25px 100px auto auto;
-    background-color: $primary;
-    border-radius: 8px;
-    font-size: 0;
+    width: 320px;
 
     .navbar-dropdown {
-        display: none;
+        border-radius: 8px;
+        background-color: $secondary;
         width: 320px;
-        width: 25%;
+        min-width: 25%;
     }
 
     .navbar-menu {
         width: 60px;
         display: contents;
-
-        @include media-breakpoint-down(md) {
-            display: none;
-        }
     }
 }
 
@@ -60,75 +59,26 @@ nav a {
     line-height: 35px;
     height: 100%;
     font-size: 15px;
-    display: inline-block;
-    position: relative;
     z-index: 1;
     text-decoration: none;
     text-transform: uppercase;
     text-align: center;
     color: $gray-200;
     cursor: pointer;
-    
+
     &:hover {
         text-decoration: none;
-        color: $gray-100;
+        color: $white;
         font-weight: 300;
+        padding: 0 3px;
+        border-radius: 5%;
+        border: 1px solid $white;
+        box-shadow: 0px 0px 5px 5px $tertenary;
     }
 
     &:visited {
         text-decoration: none !important;
-        color: $gray-200;
+        color: $white;
         font-weight: unset;
     }
-}
-
-nav .animation {
-    position: absolute;
-    height: 100%;
-    top: 0;
-    z-index: 0;
-    transition: all .5s ease 0s;
-    border-radius: 8px;
-}
-
-a:nth-child(1) {
-    width: 100px;
-}
-
-a:nth-child(2) {
-    width: 100px;
-}
-
-a:nth-child(3) {
-    width: 100px;
-}
-
-nav .start-about, a:nth-child(1):hover~.animation {
-    width: 100px;
-    height: 35px;
-    top: 30px;
-    right: 300px;
-    background-color: $gray-400;
-    color: $white;
-    box-shadow: 0px 0px 5px 5px $gray-200;
-}
-
-nav .start-projects, a:nth-child(2):hover~.animation {
-    width: 100px;
-    height: 35px;
-    top: 30px;
-    right: 200px;
-    background-color: $gray-400;
-    color: $white;
-    box-shadow: 0px 0px 5px 5px $gray-200;
-}
-
-nav .start-contact, a:nth-child(3):hover~.animation {
-    width: 100px;
-    height: 35px;
-    top: 30px;
-    right: 100px;
-    background-color: $gray-400;
-    color: $white;
-    box-shadow: 0px 0px 5px 5px $gray-200;
 }

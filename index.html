@@ -1,252 +1,251 @@
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>m.</title>
-    <link rel="stylesheet" href="assets/css/style.css">
-    <link rel="stylesheet" href="assets/css/fontawesome.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>m.</title>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/fontawesome.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;500;700&display=swap">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
 </head>
+
 <body>
-    <!-- Logo -->
-    <div class="navbar navbar-expand-lg navbar-dark menu shadow fixed-top">
-      <a class="navbar-brand" href="/">
+  <!-- Logo -->
+  <div class="navbar navbar-expand-lg navbar-dark menu shadow d-flex justify-content-center w-100">
+    <div class="nav-div d-flex justify-content-between w-90">
+      <a class="navbar-logo d-flex" href="/">
         <div class="logo">
-          <img src="images/logo-hot.png" alt="logo image" class="logo1" style="height: 75px; width: 75px;">
-          <img src="images/logo-cold.png" alt="logo image" class="logo2" style="height: 75px; width: 75px;">
+          <img src="images/logo.png" alt="logo image">
         </div>
       </a>
-      
+
       <!-- Nav Bar -->
-      <nav onmouseleave="hideNav()">
-        <div class="navbar-menu justify-content-end navbar" onclick="showNav()">
-          <div id="nav-icon" class="nav-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="#e9ecef" class="bi bi-list" viewBox="0 0 16 16">
-              <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
-            </svg>
-          </div>
-          <div id="nav-dropdown" class="navbar-dropdown justify-content-end navbar">
-            <a href="#intro" onmouseover="showContacts()" onmouseout="hideContacts()">contact</a>   
-            <a href="#contact-btn" onclick="showAbout('about')" onmouseout="hideAbout('about')">about</a>        
-            <a href="#projects">projects</a>     
-            <div class="animation start-home"></div>
+      <nav class="d-flex justify-content-center align-items-center">
+        <div class="navbar-menu navbar">
+          <div id="nav-dropdown"
+            class="navbar-dropdown d-flex flex-row justify-content-between align-items-center navbar">
+            <a href="#intro" onmouseover="showContacts()" onmouseout="hideContacts()">contact</a>
+            <a href="#contact-btn" onclick="showAbout('about')" onmouseout="hideAbout('about')">about</a>
+            <a href="#projects">projects</a>
           </div>
         </div>
       </nav>
     </div>
+  </div>
 
-    <!-- Intro -->
-    <section id="intro" class="intro">
-      <div class="container">
-        <div class="row align-items-center text-white">
-          <!-- intro content -->
-          <div class="col-md-6 intros text-start">
-            <h1 class="display-2">
-              <span class="display-2--intro">hi, i'm mel !</span>
-              <span class="display-2--description lh-base">
-                I'm a software developer based in Vancouver, BC. I hope to have a future in building websites, applications, and everything in between.
-              </span>
-            </h1>
-            <div id="contact-btn" class="rounded-pill btn-rounded" onmouseover="showContacts()" onmouseout="hideContacts()">
-              <span id="contact-span">come say hi !<i class="bi bi-chat-square-heart"></i></span>
-                <a id="contact-link-gh" class="contact-links" href="https://github.com/mlnkng"><i class="fab fa-github"></i></a>              
-                <a id="contact-link-li" class="contact-links" href="https://www.linkedin.com/in/mlnkng/"><i class="fab fa-linkedin"></i></a>              
-                <a id="contact-link-fb" class="contact-links" href="https://www.facebook.com/mlnkng/"><i class="fab fa-facebook"></i></a>                
-            </div> 
+  <!-- Intro -->
+  <section id="intro" class="intro">
+    <div class="container">
+      <div class="row align-items-center text-white">
+        <!-- intro content -->
+        <div class="col-md-6 intros text-start">
+          <div class="display-2">
+            <h1 class="display-2--intro">hi, i'm mel !</h1>
+            <span class="display-2--description lh-base">
+              I'm a software developer based in Vancouver, BC, working as a software maintainer. I hope to have a future
+              in building websites, applications, and everything in between.
+            </span>
           </div>
-          <!-- image content -->
-          <div class="col-md-6 intros text-end">
-            <div class="image-box"></div>
+          <div id="contact-btn" class="rounded-pill btn-rounded" onmouseover="showContacts()"
+            onmouseout="hideContacts()">
+            <span id="contact-span">come say hi !<i class="bi bi-chat-square-heart"></i></span>
+            <a id="contact-link-gh" class="contact-links" href="https://github.com/melaniekung"><i
+                class="fab fa-github"></i></a>
+            <a id="contact-link-li" class="contact-links" href="https://www.linkedin.com/in/mlnkng/"><i
+                class="fab fa-linkedin"></i></a>
+            <a id="contact-link-fb" class="contact-links" href="https://www.facebook.com/mlnkng/"><i
+                class="fab fa-facebook"></i></a>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- divider -->
-    <div class="container">
-      <div class="row text-center mt-5">
-        <hq class="display-3 fw-bold text-capitalize">
-          <div class="start-divider">
-            <p class="lead" style="margin-bottom: 0.5rem;"></p>
-          </div>
-        </hq>
+        <!-- image content -->
+        <div class="col-md-6 intros text-end">
+          <div class="image-box"></div>
+        </div>
       </div>
     </div>
+  </section>
 
-    <!-- About -->
-    <section id="about" class="about">
-    
-      <!-- cards -->
-      <div class="cards">
-        <!-- about -->
-        <div id="about-card" class="card" onmouseover="showAbout('about')" onmouseout="hideAbout('about')">
-          <div id="about-icon" class="icons">
-            <i class="bi bi-info-square"></i>
-          </div>
-          <p id="about-title" class="title">About Me</p>
-          <p id="about-text" class="text">
-            I am a new software developer based in <b>Vancouver, BC</b> with a future in building websites, applications, and everything in between. 
-            I graduated from Douglas College's <b>Computing System & Information Systems</b> and have a strong interest in excelling 
-            in <b>Web Development</b> first, before making my way through the different types of developers throughout my career.
-          </p>
+  <!-- divider -->
+  <div class="container">
+    <div class="row text-center mt-5">
+      <hq class="display-3 fw-bold text-capitalize">
+        <div class="start-divider">
+          <p class="lead" style="margin-bottom: 0.5rem;"></p>
         </div>
-    
-        <!-- technologies -->
-        <div id="tech-card" class="card" onmouseover="showAbout('tech')" onmouseout="hideAbout('tech')">
-          <div id="tech-icon" class="icons">
-            <i class="bi bi-code-slash"></i>
-          </div>
-          <p id="tech-title" class="title">Technologies</p>      
-          <div id="tech-text" class="text">  
+      </hq>
+    </div>
+  </div>
+
+  <!-- About -->
+  <section id="about" class="about">
+
+    <!-- cards -->
+    <div class="cards">
+      <!-- about -->
+      <div id="about-card" class="card">
+        <p id="about-title" class="title">About Me</p>
+        <p id="about-text" class="text">
+          I am a software developer based in <b>Vancouver, BC</b> with a future in building websites, applications, and
+          everything in between.
+          I graduated from Douglas College's <b>Computing System & Information Systems</b> and have a strong interest in
+          excelling
+          in <b>Web Development</b>, before making my way through the different types of developers throughout my
+          career.
+        </p>
+      </div>
+
+      <!-- technologies -->
+      <div id="tech-card" class="card">
+        <p id="tech-title" class="title">Technologies</p>
+        <div id="tech-text" class="text">
+          <div class="d-flex flex-row">
             <p class="tech-tit">Technologies I have worked with:</p>
-            <ul id="tech-ul">
+          </div>
+          <div class="tech-list d-flex flex-row flex-wrap">
+            <ul id="tech-ul" class="d-flex flex-column flex-wrap align-items-start">
               <li id="tech-li"><i class="bi bi-caret-right-fill"></i>HTML/CSS/JS</li>
-              <li id="tech-li"><i class="bi bi-caret-right-fill"></i>Bootstrap</li>
-              <li id="tech-li"><i class="bi bi-caret-right-fill"></i>React.js</li>
+              <li id="tech-li"><i class="bi bi-caret-right-fill"></i>PHP/Symfony</li>
               <li id="tech-li"><i class="bi bi-caret-right-fill"></i>Node.js</li>
-              <li id="tech-li"><i class="bi bi-caret-right-fill"></i>Java</li>
+              <li id="tech-li"><i class="bi bi-caret-right-fill"></i>React.js</li>
               <li id="tech-li"><i class="bi bi-caret-right-fill"></i>Python</li>
               <li id="tech-li"><i class="bi bi-caret-right-fill"></i>Go</li>
-              <li id="tech-li"><i class="bi bi-caret-right-fill"></i>PHP/Symfony</li>
+              <li id="tech-li"><i class="bi bi-caret-right-fill"></i>Java</li>
+              <li id="tech-li"><i class="bi bi-caret-right-fill"></i>AWX</li>
             </ul>
           </div>
         </div>
       </div>
-      <div class="cards card3">       
-        <!-- experiences -->
-        <div class="card-exp" onmouseleave="hideExp()">
-          <div class="exp-icons icons">
-            <div class="exp-icon icons" onclick="showCoopExp();" onmouseover="showCoopExp();">
-              <i class="bi bi-mortarboard"></i>
-            </div>
-            <div class="exp-icon icons" onclick="showWorkExp();" onmouseover="showWorkExp();">
-              <i class="bi bi-briefcase"></i>
-            </div>
+    </div>
+    <div class="cards card3">
+      <!-- experiences -->
+      <div class="card-exp d-flex flex-column justify-content-center align-items-center">
+        <div id="exp-title">Experiences</div>
+        <div class="exp-div w-100 p-5 pt-3 d-flex flex-row justify-content-evenly">
+          <div class="text-exp co-op-exp">
+            <p id="title" class="title">DEPLOYMENT & TECHNICAL SUPPORT [CO-OP]</p>
+            <span class="exp-details"><br />Artefactual Systems Inc. [May 2021 - DEC 2021]</span>
+            <ul>
+              <li><i class='bi bi-caret-right-fill'></i>deploy & upgrade client servers</li>
+              <li><i class='bi bi-caret-right-fill'></i>troubleshooting</li>
+              <li><i class='bi bi-caret-right-fill'></i>domain names configuration</li>
+            </ul>
           </div>
-          <div class="text-exp">
-            <p id="exp-title">Experiences</p>
-            <p id="title" class="title"></p>
-            <p id="textbox"></p> 
+          <div class="text-exp work-exp">
+            <p id="title" class="title">AtoM Maintainer</p>
+            <span class="exp-details"><br />Artefactual Systems Inc. [JAN 2022 - PRESENT]</span>
+            <ul>
+              <li><i class='bi bi-caret-right-fill'></i>full-stack web development</li>
+              <li><i class='bi bi-caret-right-fill'></i>data migration</li>
+              <li><i class='bi bi-caret-right-fill'></i>system integration</li>
+              <li><i class='bi bi-caret-right-fill'></i>system design</li>
+            </ul>
           </div>
         </div>
-      </div>
-    </section>
-
-    <!-- divider -->
-    <div class="container">
-      <div class="row text-center">
-        <hq class="display-3 fw-bold text-capitalize">
-          <div class="divider">
-            <div class="start-divider">
-              <p class="lead" style="margin-bottom: 0.5rem;"></p>
-            </div>
-          </div>
-        </hq>
       </div>
     </div>
+  </section>
 
-    <!-- Projects -->
-    <section id="projects" class="projects">
-      <div class="proj-cont">
-        <div id="proj-title">Projects</div>
-        <div id="proj-carousel" class="carousel slide" data-ride="carousel">
-          <!-- indicators -->
-          <ol class="carousel-indicators">
-            <li data-target="#proj-carousel" data-slide-to="0" class="active"></li>
-            <li data-target="#proj-carousel" data-slide-to="1"></li>
-            <li data-target="#proj-carousel" data-slide-to="2"></li>
-            <li data-target="#proj-carousel" data-slide-to="3"></li>
-            <li data-target="#proj-carousel" data-slide-to="4"></li>
-          </ol>
-
-          <!-- wrapper -->
-          <div class="carousel-inner">
-            <div class="item active">
-              <a href="https://github.com/mlnkng/tictacgo">
-                <div class="img"><img src="/images/tictacgo.png"></div>
-              </a>
-              <div class="carousel-caption">
-                <p>Tic-Tac-Toe written in Go, with HTML and CSS</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <a href="https://irvingtire.ca/">
-                <div class="img"><img src="/images/irvingtire.png"></div>
-              </a>
-              <div class="carousel-caption">
-                <p>Website built with CSS and HTML</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <a href="https://github.com/mlnkng/W21G10_RecipeFinder">
-                <div class="img"><img src="/images/recipefinder.png"></div>
-              </a>
-              <div class="carousel-caption">
-                <p>Android app built using Java with MySQL</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <a href="https://github.com/mlnkng/Mavericks_SuperHR-PayrollSystem">
-                <div class="img"><img src="/images/payroll.png"></div>
-              </a>
-              <div class="carousel-caption">
-                <p>Web app built with Java, using Spring Boot framework</p>
-              </div>
-            </div>
-
-            <div class="item">
-              <a href="https://github.com/mlnkng/CSIS3380_Project01">
-                <div class="img"><img src="/images/randomquotes.png" alt="">
-              </a>
-              <div class="carousel-caption">
-                <p>Web project built with CSS and JavaScript, using React framework</p>
-              </div>
-            </div>
-          </div>
-
-          <!-- left & right arrows -->
-          <a class="left carousel-control" data-slide="prev" href="#proj-carousel">
-            <span class="glyphicon glyphicon-chevron-left"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="right carousel-control" data-slide="next" href="#proj-carousel">
-            <span class="glyphicon glyphicon-chevron-right"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-      </div>
-    </section>
-
-    <!-- divider -->
-    <div class="container">
-      <div class="row text-center">
-        <hq class="display-3 fw-bold text-capitalize">
-          <div class="end-divider">
+  <!-- divider -->
+  <div class="container">
+    <div class="row text-center">
+      <hq class="display-3 fw-bold text-capitalize">
+        <div class="divider">
+          <div class="start-divider">
             <p class="lead" style="margin-bottom: 0.5rem;"></p>
           </div>
-        </hq>
+        </div>
+      </hq>
+    </div>
+  </div>
+
+  <!-- Projects -->
+  <section id="projects" class="projects">
+    <div class="proj-cont">
+      <div id="proj-title">Projects</div>
+      <div class="proj-div d-flex justify-content-center flex-row flex-wrap">
+        <div class="proj-card m-3 d-flex flex-column flex-wrap">
+          <a href="https://github.com/melaniekung/tictacgo">
+            <img src="/images/projects/tictacgo.png" class="img opacity-75">
+          </a>
+          <div class="proj-caption text d-flex justify-content-center">
+            <p>Tic-Tac-Toe written in Go, with HTML and CSS</p>
+          </div>
+        </div>
+
+        <div class="proj-card m-3 d-flex flex-column flex-wrap">
+          <a href="https://github.com/artefactual/atom">
+            <img src="/images/projects/atom.png" class="img bg-white p-3 opacity-75">
+          </a>
+          <div class="proj-caption text d-flex justify-content-center">
+            <p>Web-based, open source application for standards-based archival description</p>
+          </div>
+        </div>
+
+        <div class="proj-card m-3 d-flex flex-column flex-wrap">
+          <a href="https://github.com/melaniekung/CSIS3380_Project01">
+            <img src="/images/projects/randomquotes.png" class="img">
+          </a>
+          <div class="proj-caption text d-flex justify-content-center">
+            <p>Web project built with CSS and JavaScript, using React framework</p>
+          </div>
+        </div>
+
+        <div class="proj-card m-3 d-flex flex-column flex-wrap">
+          <a href="https://github.com/melaniekung/W21G10_RecipeFinder">
+            <img src="/images/projects/recipefinder.png" class="img opacity-75">
+          </a>
+          <div class="proj-caption text d-flex justify-content-center">
+            <p>Android app built using Java with MySQL</p>
+          </div>
+        </div>
+
+        <div class="proj-card m-3 d-flex flex-column flex-wrap">
+          <a href="https://github.com/melaniekung/Mavericks_SuperHR-PayrollSystem">
+            <img src="/images/projects/payroll.png" class="img">
+          </a>
+          <div class="proj-caption text d-flex justify-content-center">
+            <p>Web app built with Java, using Spring Boot framework</p>
+          </div>
+        </div>
       </div>
     </div>
+    </div>
+  </section>
 
-    <footer id="footer" class="footer">
-      <div class="contact-icons">
-        <a id="contact-link-gh" class="footer-icons icon" href="https://github.com/mlnkng"><i class="fab fa-github"></i></a>              
-        <a id="contact-link-li" class="footer-icons icon" href="https://www.linkedin.com/in/mlnkng/"><i class="fab fa-linkedin"></i></a>              
-        <a id="contact-link-fb" class="footer-icons icon" href="https://www.facebook.com/mlnkng/"><i class="fab fa-facebook"></i></a>
-      </div>
-      <p id="copyright">&#169 designed and built by mel</p>
-    </footer>
+  <!-- divider -->
+  <div class="container">
+    <div class="row text-center">
+      <hq class="display-3 fw-bold text-capitalize">
+        <div class="end-divider">
+          <p class="lead" style="margin-bottom: 0.5rem;"></p>
+        </div>
+      </hq>
+    </div>
+  </div>
 
-    <script src="script.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <!-- footer -->
+  <footer id="footer" class="footer">
+    <div class="contact-icons">
+      <a id="contact-link-gh" class="footer-icons icon" href="https://github.com/melaniekung"><i
+          class="fab fa-github"></i></a>
+      <a id="contact-link-li" class="footer-icons icon" href="https://www.linkedin.com/in/mlnkng/"><i
+          class="fab fa-linkedin"></i></a>
+      <a id="contact-link-fb" class="footer-icons icon" href="https://www.facebook.com/mlnkng/"><i
+          class="fab fa-facebook"></i></a>
+    </div>
+    <p id="copyright">&#169 designed and built by mel</p>
+  </footer>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+    integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+    crossorigin="anonymous"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </body>
+
 </html>

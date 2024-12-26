@@ -2,7 +2,7 @@
 @use '../components/mixins' as *;
 
 #projects {
-    @include gradient;
+    background-color: $secondary;
     border-radius: 10px;
     margin: 0 30px;
     padding-top: 10px;
@@ -10,33 +10,31 @@
 
 #proj-title {
     font-size: 2rem;
-    color: $gray-100;
-    text-transform: lowercase;
+    color: $primary;
+    text-transform: uppercase;
     text-align: center;
-    margin: 15px;
+    margin: 2rem;
 }
 
-#proj-carousel {
-    border-radius: 10px;
-    @include centerDiv
+.proj-caption {
+    font-size: 1.5rem;
+    color: $primary;
+    padding: 15px;
 }
 
-.carousel-inner {
-    border-radius: 10px;
-    max-width: 550px;
-    
-    .item {
-        height: 430px !important;
+.proj-card {
+    width: 30%;
 
-        .carousel-caption {
-            padding: 10px 0;
-            display: block;
-            font-size: 1.5rem;
-            height: 100px;
-            text-align: center;
-            text-transform: lowercase;
-            text-shadow: none !important;
+    a {
+        &:hover {
+            border-radius: 5%;
+            border: 1px solid $tertenary;
+            box-shadow: 0px 0px 5px 5px $white;
         }
+    }
+
+    img {
+        width: 100%;
     }
 }
 
@@ -44,18 +42,12 @@ img {
     border-radius: 10px;
 }
 
-.carousel-control {
-    background-image: none !important;
-    height: 300px;
-    text-shadow: 4px 4px 0 $gray-400;
-    
-    &:hover.left .glyphicon {
-        color: $gray-200;
-        text-shadow: 0 0 5px $gray-200;
-    }
-    
-    &:hover.right .glyphicon {
-        color: $gray-200;
-        text-shadow: 0 0 5px $gray-200;
+@media (max-width: 500px) {
+    .proj-div {
+        flex-direction: column !important;
+
+        .proj-card {
+            width: unset;
+        }
     }
 }

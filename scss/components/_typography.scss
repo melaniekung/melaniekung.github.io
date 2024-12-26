@@ -8,28 +8,19 @@ i.bi {
 // li icon
 i.bi-caret-right-fill {
     font-size: 1rem;
-    color: $gray-500;
+    color: $tertenary;
     padding-right: 5px;
 }
 
 // Intro
 .display-2 {
+    color: $primary;
     margin-bottom: 1rem;
-
-    &--intro {
-        display: inline-block;
-        font-weight: 500;
-    }
 
     &--description {
         font-size: 1.5rem;
-        display: block;
         margin-top: 1.2rem;
         margin-bottom: 1.2rem;
-
-        @include media-breakpoint-up(lg) {
-            display: inline-block;
-        }
     }
 }
 
@@ -93,35 +84,26 @@ i.bi-caret-right-fill {
     height: 0.1rem;
     display: block;
     margin: 0 auto;
-    background-color: $gray-200;
+    background-color: $background;
     margin-bottom: 1rem;
 }
 
 // About
 .title {
-    display: inline-block;
     font-weight: 400;
     font-size: 2rem;
-    text-transform: lowercase;
-    color: $gray-100;
-}
-
-.tech-card {
-    padding-top: 1rem;
-    text-align: center;
-    color: $gray-500;
+    text-transform: uppercase;
+    color: $white;
 }
 
 .text {
     font-size: 1.3rem;
-    display: block;
-    margin-top: 1rem;
-    color: $gray-100;
+    color: $white;
     padding: 15px;
     text-align: center;
 
     b {
-        color: $gray-500;
+        color: $secondary;
         font-weight: 500;
     }
 
@@ -129,7 +111,7 @@ i.bi-caret-right-fill {
         font-size: 1rem;
         position: relative;
         padding-left: 20px;
-        color: $gray-100;
+        color: $white;
     }
 
     @include media-breakpoint-up(lg) {
@@ -138,27 +120,10 @@ i.bi-caret-right-fill {
     }
 }
 
-.text-exp {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-
-    ul {
-        display: block;
-        column-gap: 5rem;
-    }
-
-    li {
-        display: block;
-        position: relative;
-    }
-}
-
 .icon {
-    color: $gray-200;
+    color: $tertenary;
 
     &:hover {
-        color: $gray-200;
+        color: $tertenary;
     }
 }

@@ -2,7 +2,7 @@
 @use '../components/mixins' as *;
 
 footer {
-    @include gradient-rev;
+    background-color: $primary;
     height: 100px;
     padding: 2rem;
 

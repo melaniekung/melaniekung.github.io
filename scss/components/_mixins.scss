@@ -1,15 +1,5 @@
 @use '../custom' as *;
 
-// Gradient mixin
-@mixin gradient {
-    background: linear-gradient(to right, rgba($purple, 0.95), rgba(#ffd0ff, 0.95));
-}
-
-@mixin gradient-rev {
-    background: linear-gradient(to right, rgba(#ffd0ff, 0.95), rgba($purple, 0.95));
-    opacity: 1;
-}
-
 // Absolute center
 @mixin absoluteCenter {
     position: absolute;

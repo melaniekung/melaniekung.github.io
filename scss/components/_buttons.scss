@@ -11,7 +11,7 @@
     margin: 25px;
 
     span {
-        @include gradient-rev;
+        background-color: $primary;
         position: absolute;
         width: 100%;
         text-align: center;
@@ -37,35 +37,35 @@
         transform: translateX(-100%);
         opacity: 0;
         transition: 0.3s linear;
-        color: $gray-200;
+        color: $black;
         z-index: -1;
     }
 
     a#contact-link-gh {
-        transition: all 0.6s ease-in-out;        
-        
+        transition: all 0.6s ease-in-out;
+
         i:hover {
             font-size: 2.5rem;
             text-shadow: 0 0 5px 5px $gray-100;
-        } 
+        }
     }
 
     a#contact-link-li {
-        transition: all 0.4s ease-in-out;        
-        
+        transition: all 0.4s ease-in-out;
+
         i:hover {
             font-size: 2.5rem;
             text-shadow: 0 0 5px 5px $gray-100;
-        } 
+        }
     }
 
     a#contact-link-fb {
-        transition: all 0.2s ease-in-out;        
-        
+        transition: all 0.2s ease-in-out;
+
         i:hover {
             font-size: 2.5rem;
             text-shadow: 0 0 5px 5px $gray-100;
-        } 
+        }
     }
 
     @include media-breakpoint-down(md) {

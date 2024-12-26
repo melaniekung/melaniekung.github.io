@@ -1,29 +1,19 @@
 // theme colors
-$pink:    #ffd0ff;
-$purple:  #d7c1ff;
-$purple-dark: #af9aff;
-$purple-hover: #cbafff;
-
-// white and gray colors
-$white:    #fff;
-$gray-100: #f8f9fa;
-$gray-200: #e9ecef;
-$gray-300: #dee2e6;
-$gray-400: #ced4da;
-$gray-500: #adb5bd;
-$gray-600: #6c757d;
-$gray-700: #495057;
-$gray-800: #343a40;
-$gray-900: #212529;
-$black:    #000;
-
-$primary: $purple;
-$secondary: $pink;
+$primary: #373F51;
+$secondary: #A9BCD0;
+$tertenary: #d5d4ff;
+$background: #E8E9EE;
+$black:    #1B1B1E;
+$white: #FFF;
 
 body {
-    background-color: $gray-200 !important;
+    background-color: $background !important;
     font-family: 'Ubuntu', sans-serif !important;
-    color: $gray-200 !important;
+    color: $background !important;
+}
+
+.w-90 {
+    width: 90%;
 }
 
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
